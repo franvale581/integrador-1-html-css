@@ -1,0 +1,139 @@
+/*----------------Hover NavBar------------------*/
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 85px;
+}
+
+.header {
+    transition: all 0.5s ease-out;
+}
+
+.header:hover {
+    background: var(--bg-light);
+    transition: all 0.5s ease-in;
+    transform: scale(1.005);
+}
+
+
+
+.logo a h2 {
+    transition: all 0.5s ease-out;
+}
+
+.logo a h2:hover {
+    color: var(--text-white);
+    transition: all 0.5s ease-in;
+    transform: scale(1.1);
+}
+
+
+
+.nav-links li {
+    transition: all 0.2s ease-out;
+}
+
+.nav-links li:hover {
+    transition: all 0.25s ease-in;
+    transform: scale(1.2);
+}
+
+.nav-links li a {
+    transition: all 0.3s ease-out;
+}
+
+.nav-links li a:hover {
+    color: var(--text-red);
+    transition: all 0.3s ease-in;
+}
+
+
+
+.btn button {
+    transition: all 0.3s ease-out;
+}
+
+.btn button:hover {
+    background: var(--btn-white);
+    color: var(--btn-black);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+/*-------Hamburguesa-------*/
+
+.menu-toggle {
+    transition: all 0.3s ease-out;
+}
+
+.menu-toggle:hover {
+    box-shadow: 0 0 15px 0 #e5383b;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+
+/*---------- Hero Section ---------*/
+
+
+.scale-up {
+    animation: scale-up-bottom 1.5s;
+}
+
+@keyframes scale-up-bottom {
+    0% {
+        transform: scale(.5);
+        transform-origin: center bottom;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: center bottom;
+        opacity: 1;
+    }
+}
+
+
+
+/*------- News Section -------*/
+
+.card-container {
+    transition: all 0.4s ease-out;
+    cursor: pointer;    
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+    background: var(--bg);
+    border: 2px solid #e5383b;
+    transition: all 0.25s ease-in;
+}
+
+
+.card-icons img {
+    transition: all 0.4s ease-out;
+}
+
+.card-icons img:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in;
+}
+
+
+/*--------Contact Section--------*/
+
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px var(--bg-light);
+    transition: all 0.5s ease-out;
+}
+
+.contact-form-btn:hover {
+    background: #293136;
+    color: var(--text-white);
+    transition: all 0.5s ease-out;
+}

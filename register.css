@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Play:wght@400;700&display=swap');
+
+:root {
+    --bg: #0b090a;
+    --bg-light: #161a1d;
+    --red: #660708;
+    --red-light: #a4161a;
+    /* text */
+    --text-white: #f5f3f4;
+    --text-red: #e5383b;
+    --text-black: #161a1d;
+
+    /* btn colors */
+    --btn-white: #f5f3f4;
+    --btn-black: #161a1d;
+    --btn-darkred: #660708;
+    --btn-red: #a4161a;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*-------Header-------*/
+
+.header {
+    display: flex;
+    height: 85px;
+    background-color: var(--bg);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10%;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.logo a h2 {
+    font-size: 26px;
+    color: var(--text-red);
+    margin-bottom: 3px;
+}
+
+.logo a h3 {
+    font-size: 15px;
+    color: var(--text-white);
+    font-style: italic;
+}
+
+
+/*-------Register Section-------*/
+
+#register {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-light);
+    height: 900px;
+    width: 100%;
+    font-family: 'Play', sans-serif;
+}
+
+.register-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    margin: 3rem;
+    width: 500px;
+    height: 800px;
+    background: var(--bg);
+    border-radius: 6px;
+}
+
+.register-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.register-container form h2 {
+    font-size: 38px;
+    font-weight: 700;
+    padding: 60px;
+    color: var(--text-white);
+    letter-spacing: 0.3rem;
+    text-shadow: 0px 2px var(--red-light);
+}
+
+.register-input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-input-box span {
+    font-size: 21px;
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+.register-input-box input {
+    width: 22vw;
+    height: 4vh;
+    color: var(--text-white);
+    background: #131415;
+    border: none;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+}
+
+.register-checkbox {
+    margin: 4vh 0;
+    color: var(--text-white);
+    display: flex;
+    gap: 13px;
+}
+
+.register-button input {
+    width: 13vw;
+    height: 7vh;
+    color: var(--text-red);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    background: var(--btn-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*-------Footer-------*/
+
+footer {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.footer-container p {
+    text-align: center;
+    color: var(--text-white);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+/*------------- ANIMACIONES -------------*/
+
+
+.header .logo {
+    transition: all 0.3s ease-out; 
+}
+
+.header .logo:hover {
+    transform: scale( 1.1);
+    transition: all 0.28s ease-in;
+}
+
+
+.register-container {
+    transition: all 1s ease-out;
+}
+
+.register-container:hover {
+    border: 2px solid var(--text-red);
+    box-shadow: 0 0 10px 4px var(--text-red);
+    transition: all 0.3s ease-in;
+}
+
+
+.register-input-box input {
+    transition: all 0.2s ease-out;
+}
+
+.register-input-box input:focus {
+    box-shadow: 0 0 10px 4px var(--bg-light);
+    transition: all 0.2s ease-in;
+}
+
+
+.login-links a:hover {
+    color: var(--text-red);
+}
+
+
+.register-button input {
+    transition: all 0.3s ease-out;
+}
+
+
+.register-button input:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+}
+
+
+.blur-in-expand{
+    animation:blur-in-expand 0.6s linear both;
+} 
+
+@keyframes blur-in-expand{
+    0%{
+        transform:scale(0);filter:blur(12px);opacity:0
+    }
+    100%{
+        transform:scale(1);filter:blur(0);opacity:1
+    }
+}

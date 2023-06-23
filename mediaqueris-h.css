@@ -1,0 +1,247 @@
+
+@media screen and (max-width: 1339px) {
+    /*-------News Section-------*/
+
+    .news-cards {
+        gap: 3rem;
+    }
+
+    /*-------About Us Section-------*/
+
+
+    .about-img img {
+        margin: 90px 0 0 0;
+        padding: 20px ;
+        border: none;
+    }
+
+    .about-h {
+        text-align: center;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    
+    /*-------About Us Section-------*/
+
+    .about-h {
+        padding: 0 60px 0 0;
+        margin-top: 75px;
+    }
+
+    .about-h h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    /*-------News Section-------*/
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 9rem;
+    }
+
+    /*-------About Us Section-------*/
+
+    .about-img img {
+        margin:0;
+        padding: 90px 100px 90px 50px;
+        margin-top: 120px;
+
+    }
+
+    .about-h {
+        position: relative;
+        right: 250px;
+        bottom: 40px;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .about-h h2 {
+        font-size: 40px;
+    }
+
+    .about-items {
+        margin: 0;
+    }
+
+    .about-li li span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .about-li li p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+
+    /*-------Header-------*/
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        z-index: 2;
+        position: absolute;
+        background: #161a1d;
+        top: 84px;
+        left: 0px;
+        width: 300px;
+        height: 400px;
+        gap: 50px;
+        padding: 80px;
+        transition: all 0.2s ease-in;
+    }
+
+    .nav-links li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-size: 24px;
+    }
+
+
+
+    .menu-toggle img {
+        height: 25px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .menu-toggle {
+        position: relative;
+        top: 2px;
+        right: 545px;
+        background: #e5383b;
+        border: 1px solid #a4161a;
+        border-radius: 10%;
+        display: flex;
+        order: 2;
+    }
+
+    #menu-toggle:checked + .nav-links, .slide-in {
+    display: flex;
+  }
+
+  /*-------Hero-------*/
+
+  .hero-info h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    padding: 80px;
+}
+
+  /*-------News-------*/
+
+  #news {
+    width: 100%;
+    height: 2050px;
+    background: linear-gradient(to bottom,#0e1113,#161a1d  );
+    font-family:  'Play', sans-serif;
+}
+
+  .news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .card-container {
+    width: 40rem;
+    padding: 40px;
+  }
+
+
+
+  /*bug con parrafo de pierce the veil*/
+  .p-ptv {
+    display: block;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1059px) {
+
+    /*-------Header-------*/
+    .menu-toggle {
+        right: 523px;
+
+    }
+
+    /*-------About Us Section-------*/
+
+    .about-img {
+        display: none;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+    .about-h {
+        position: relative;
+        right: 0;
+        bottom: 60px;
+        padding: 0;
+    }
+
+    .about-h h2 {
+        font-size: 60px;
+    }
+
+    .about-items {
+        width: 500px;
+        position: relative;
+        left: 25%;
+        bottom: 100px;
+    }
+
+    .about-li li span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 20px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about-li li p{
+        font-size: 20px;
+    }
+
+    /*-------Contact Section-------*/
+
+}
