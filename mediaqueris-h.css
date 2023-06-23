@@ -732,7 +732,7 @@
 }
 
 .hero-info h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
@@ -804,4 +804,58 @@
     margin: 100px 30px;
 }
 
+}
+
+@media screen and (max-width: 437px) {
+
+    /*-------Header-------*/
+
+    .header {
+        padding: 5px 35px;
+    }
+
+    .logo a h2 {
+        font-size: 17px;
+        padding-left: 30px;
+    }
+
+    /*--------news-------*/
+
+    .news-h2 h2 {
+        font-size: 25px;
+    }
+
+    .card-container {
+        width: 19rem;
+    }
+    
+    /*-------about us-------*/
+    
+    .about-h h2 {
+        font-size: 25px;
+    }
+
+    .about-li li span {
+        font-size: 20px;
+    }
+
+    .about-li li p{
+        font-size: 15px;
+    }
+
+
+    /*-------Contact us-------*/
+
+
+    .contact-h h2 {
+        font-size: 25px;
+    }
+    
+    .contact-h h3 {
+        font-size: 25px;
+    }
+
+    .contact-container {
+        margin: 130px 30px;
+    }
 }
