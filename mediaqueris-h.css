@@ -859,3 +859,49 @@
         margin: 130px 30px;
     }
 }
+
+@media screen and (max-width: 413px) {
+
+    /*-------menu toggle-------*/
+
+    .menu-toggle {
+        right: 220px;
+    }
+
+    /*-------hero--------*/
+
+    #hero {
+        height: 550px;
+    }
+
+    .hero-info h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 389px) {
+
+    /*-------news-------*/
+    
+    .news-h2 h2 {
+        font-size: 22px;
+    }
+    
+    /*-------About us-------*/
+
+    .about-h h2 {
+        font-size: 22px;
+    }
+
+    /*-------Contact us-------*/
+
+
+    .contact-h h2 {
+        font-size: 22px;
+    }
+    
+    .contact-h h3 {
+        font-size: 22px;
+    }
+}
+
