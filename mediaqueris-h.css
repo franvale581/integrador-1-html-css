@@ -63,9 +63,7 @@
     }
 
     .about-h {
-        position: relative;
-        right: 250px;
-        bottom: 40px;
+        position: unset;
         padding-right: 0;
         margin: 0;
     }
@@ -84,9 +82,10 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        padding-right: 20px;
+        padding-right: 0px;
         font-size: 20px;
         margin-bottom: 15px;
+        margin-right: 0;
     }
 
     .about-li li p{
@@ -95,7 +94,7 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        padding-right: 20px;
+        padding-right: 5px;
         font-size: 16px;
     }
 }
@@ -139,7 +138,7 @@
     .menu-toggle {
         position: relative;
         top: 2px;
-        right: 545px;
+        right: 559px;
         background: #e5383b;
         border: 1px solid #a4161a;
         border-radius: 10%;
@@ -196,11 +195,15 @@
 
     /*-------Header-------*/
     .menu-toggle {
-        right: 523px;
+        right: 546px;
 
     }
 
     /*-------About Us Section-------*/
+
+    #about {
+        height: 900px;
+    } 
 
     .about-img {
         display: none;
@@ -210,10 +213,9 @@
         width: 100%;
     }
     .about-h {
-        position: relative;
-        right: 0;
-        bottom: 60px;
-        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-h h2 {
@@ -221,10 +223,7 @@
     }
 
     .about-items {
-        width: 500px;
-        position: relative;
-        left: 25%;
-        bottom: 100px;
+        width: 100%;
     }
 
     .about-li li span {
@@ -233,9 +232,9 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        padding-right: 20px;
+        padding-right: 0px;
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     .about-li li p{
@@ -250,7 +249,7 @@
     /*-------Menu toggle------- */
 
     .menu-toggle {
-        right: 500px;
+        right: 520px;
     }
 
     /*-------News-------*/
@@ -273,7 +272,7 @@
     /*-------Menu toggle------- */    
 
     .menu-toggle {
-        right: 480px;
+        right: 495px;
     }
 }
 
@@ -283,7 +282,7 @@
     /*-------Menu toggle------- */ 
 
     .menu-toggle {
-        right: 455px;
+        right: 470px;
     }
 
     /*-------Hero Section------- */
@@ -300,7 +299,7 @@
     /*-------Menu toggle------- */ 
 
     .menu-toggle {
-         right: 436px;
+         right: 446px;
      }
 
 
@@ -324,7 +323,7 @@
     /*-------Menu toggle------- */ 
 
     .menu-toggle {
-        right: 420px;
+        right: 430px;
     }
    
    
@@ -340,12 +339,6 @@
         font-size: 45px;
     }
 
-    .about-items {
-        width: 500px;
-        position: relative;
-        left: 20%;
-        bottom: 100px;
-    }
 
 }
 
@@ -355,7 +348,7 @@
     /*-------Menu toggle------- */ 
 
     .menu-toggle {
-        right: 400px;
+        right: 410px;
     }
 
 
@@ -425,14 +418,6 @@
     right: 360px;
 }   
 
-    /*-------About-------*/   
-
-.about-items {
-    width: 500px;
-    position: relative;
-    left: 15%;
-    bottom: 100px;
-}
 
     /*------Contact us-------*/
 
@@ -494,19 +479,9 @@
 
     /*-------About-------*/
 
-#about {
-    height: 600px;
-}
    
 .about-h h2 {
     font-size: 35px;
-}
-
-.about-items {
-    width: 500px;
-    position: relative;
-    left: 13%;
-    bottom: 50px;
 }
 
 .about-li li span {
@@ -572,12 +547,7 @@
     } 
     
 
-    .about-items {
-        width: 500px;
-        position: relative;
-        left: 10%;
-        bottom: 50px;
-    }
+
 
     /*------Contact us-------*/
 
@@ -683,9 +653,14 @@
     margin-top: 20px;
 }
 
-.about-items {
-    left: 7%;
+.about-li li {
+    margin-top: 70px;
 }
+
+.about-li li span {
+    margin-bottom: 30px;
+}
+
 
     /*------Contact us-------*/
 
@@ -714,8 +689,119 @@
     /*-------About us-------*/
 
     .about-items {
-        left: 4.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: unset;
     }        
 
+    /*-------Contact Section-------*/
+
+
+
+.contact-container {
+    padding: 40px 0;
+    margin: 40px;
+}
+
+.contact-form-text {
+    margin: 30px 0;
+}
+
+.contact-form textarea { 
+    height: 100px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 509px) {
+
+/*-------Menu toggle------- */
+
+.menu-toggle {
+    right: 275px;
+}  
+
+/*-------Hero-------*/
+
+#hero {
+    height: 800px;
+}
+
+.hero-info h1 {
+    font-size: 30px;
+}
+
+
+/*-------Contact us-------*/
+
+.contact-form-text {
+    height: 50px;
+}
+
+.contact-form-btn {
+    float: left;
+}
+
+}
+
+@media screen and (max-width: 474px) {
+
+/*-------Menu toggle------- */
+
+.menu-toggle {
+    right: 238px;
+} 
+
+
+/*------header------*/
+
+.logo a h2 {
+    font-size: 18px;
+    color: var(--text-red);
+}
+
+.btn button {
+    width: 70px;
+    height: 30px;
+}
+
+/*-------news--------*/
+
+.news-h2 h2 {
+    font-size: 28px;
+}
+
+/*-------about us-------*/
+
+.about-h h2 {
+    font-size: 28px;
+}
+
+/*-------Contact us-------*/
+.contact-h h2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    font-size: 28px;
+}
+
+.contact-h h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    padding: 0;
+    justify-content: center;
+}
+
+.contact-h {
+    padding-top: 60px;
+}
+
+.contact-container {
+    margin: 100px 30px;
+}
 
 }
