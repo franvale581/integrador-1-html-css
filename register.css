@@ -115,8 +115,8 @@
 }
 
 .register-input-box input {
-    width: 22vw;
-    height: 4vh;
+    width: 22rem;
+    height: 2rem;
     color: var(--text-white);
     background: #131415;
     border: none;
@@ -133,8 +133,8 @@
 }
 
 .register-button input {
-    width: 13vw;
-    height: 7vh;
+    width: 13rem;
+    height: 3.5rem;
     color: var(--text-red);
     font-size: 20px;
     font-weight: 600;
@@ -233,4 +233,43 @@ footer {
     100%{
         transform:scale(1);filter:blur(0);opacity:1
     }
+}
+
+
+/*-------MEDIAQUERIS RESPONSIVE-------*/
+
+@media screen and (max-width: 590px) {
+
+    .register-container {
+        margin: 3rem 1rem 0 1rem;
+        width: 500px;
+        height: 800px;
+        background: var(--bg);
+        border-radius: 6px;
+    }  
+
+    .register-container form h2 {
+        font-size: 30px;
+        padding: 60px 0;
+    }
+
+    .register-input-box span {
+        font-size: 18px;
+    }
+
+    .register-input-box input {
+        width: 20rem;
+    }
+
+    .register-checkbox {
+        margin: 2rem 0;
+        font-size: 13px;
+    }
+
+    .register-button input {
+        width: 12rem;
+        height: 3rem;
+        font-size: 18px;
+    }
+
 }
