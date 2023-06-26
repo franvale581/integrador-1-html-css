@@ -306,8 +306,6 @@ footer {
         margin: 10rem 5rem 0 5rem;
         width: 500px;
         height: 500px;
-        background: var(--bg);
-        border-radius: 6px;
     }
 
     .login-buttom {
@@ -328,5 +326,71 @@ footer {
 
     }
 
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .login-container {
+        margin: 13.4rem 1rem 0 1rem;
+        width: 500px;
+        height: 450px;
+    }
+
+    .login-container form h2 {
+        font-size: 20px;
+        padding: 50px 0 30px 0;
+    }
+
+    .login-buttom {
+        margin-top: 10px;
+        font-size: 13px;
+        width: 5rem;
+        height: 1.5rem;
+    }
+
+    .login-links a {
+        padding: 0 15px;
+        font-size: 13px;
+    }
+
+    .login-input-box input {
+        width: 13rem;
+    }
+
+
+    .login-input-box span {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 339px) {
+
+    /*-------Header-------*/
+
+    .logo a h2 {
+        font-size: 22px;
+    }
+    
+    .logo a h3 {
+        font-size: 13px;
+    }
+    
+    /*-------login-------*/
+
+    .login-container form h2 {
+        font-size: 18px;
+        padding: 50px 0 30px 0;
+    }
+
+    .login-input-box input {
+        height: 1.2rem;
+    }
+
+    .login-links a {
+        padding: 0 10px;
+        font-size: 13px;
+    }
 
 }
