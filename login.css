@@ -64,7 +64,7 @@
     margin: 0;
     padding: 0;
     background: var(--bg-light);
-    height: 700px;
+    height: 800px;
     width: 100%;
     font-family: 'Play', sans-serif;
 }
@@ -76,7 +76,7 @@
 }
 
 .login-container {
-    margin: 2.6rem;
+    margin: 5.6rem;
     width: 500px;
     height: 600px;
     background: var(--bg);
@@ -116,7 +116,7 @@
 
 .login-input-box input {
     width: 22rem;
-    height: 4vh;
+    height: 2rem;
     color: var(--text-white);
     background: #131415;
     border: none;
@@ -132,7 +132,7 @@
 
 .login-buttom {
     width: 13rem;
-    height: 7vh;
+    height: 3.5rem;
     color: var(--text-red);
     font-size: 20px;
     font-weight: 600;
@@ -241,3 +241,61 @@ footer {
 
 
 /*-------MEDIAQUERIS RESPONSIVE-------*/
+
+@media screen and (max-width: 650px) {
+
+    .login-links a {
+        color: var(--red-light);
+        padding: 0 55px;
+    }
+
+
+}
+
+@media screen and (max-width: 605px) {
+
+    .login-input-box input {
+        width: 19.5rem;
+        height: 2rem;
+    }
+
+    .login-buttom {
+        margin-top: 5px;
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .login-input-box {
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 589px) {
+
+    .login-container form h2 {
+        font-size: 32px;
+        padding: 50px;
+    }
+    
+    .login-buttom {
+        margin-top: 40px;
+    }
+
+    .login-links a {
+        color: var(--red-light);
+        padding: 0 30px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 589px) {
+
+    .login-input-box input {
+        width: 17rem;
+        height: 1.6rem;
+    }
+
+}
